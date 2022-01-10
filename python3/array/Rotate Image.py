@@ -36,11 +36,14 @@ class Solution:
         
         for i in range(n):
             for j in range(n):
-                if i == 
-                print(matrix[i][j])
+                matrix1[j][n-i-1]= matrix[i][j]
+                print(matrix[i][j] , matrix1[i][j])
                 
         print(matrix1)
+        
+        for i in range(n):
+            for j in range(n):
+                matrix[i][j]=matrix1[i][j]
         """
         Do not return anything, modify matrix in-place instead.
         """
-        
